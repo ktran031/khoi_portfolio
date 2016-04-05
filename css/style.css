@@ -26,7 +26,7 @@
 
 		a:hover {
 			text-decoration: none;
-			border-bottom: 1px solid #000;			
+					
 		}
 
 	strong, b {
@@ -127,6 +127,7 @@
 	input[type="reset"],
 	input[type="button"],
 	.button {
+
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-o-appearance: none;
@@ -284,7 +285,7 @@
 	}
 
 	.logo a:hover {
-		border-bottom: 1px solid #000;
+		border-bottom: #fff;
 	}
 
 	
@@ -378,7 +379,7 @@ nav {
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    
+   
     border-bottom: 2px solid #283744;
 }
 
@@ -508,6 +509,10 @@ nav a#pull {
 			margin-bottom: 0.5em;
 		}
 
+		#banner ul {
+			list-style: none;
+		}
+		
 		#banner p {
 			color: #fff;
 			font-size: 1.5em;
@@ -594,6 +599,40 @@ nav a#pull {
 	color: #fff;
 }
 
+.portfolioopcontent {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.portfolioopcontent .contentboxo {
+    float: left;
+    margin: 1%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: all 0.6s ease 0s;
+    width: 31.3%;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.094), 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.2), 0 2px 1.5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolioopcontent .contentboxo img.overlayo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: opacity 0.3s ease 0s;
+    width: 100%;
+    z-index: 500;
+}
+
+
+
+
+
 .projectcontent {
     display: inline-block;
     margin: 0 auto;
@@ -618,7 +657,7 @@ nav a#pull {
 .project-container {
 	width: 50%;
 	display: inline-block;
-	margin-left: -4.5px;
+	margin-left: -11.5px;
 }
 
 
@@ -633,7 +672,7 @@ nav a#pull {
 
 /* Footer */
 	#footer {
-
+		list-style: none;
 		padding: 8em 0 6em 0;
 		color: #aaa;
 		text-align: center;

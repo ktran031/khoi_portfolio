@@ -22,13 +22,38 @@ $(window).resize(function(){
     }
 }); 
 
+// <!----- JQUERY FOR SLIDING NAVIGATION --->   
+
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+// <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+
+
+
 // Banner Area //
     
     //Click to slide down Why Work With Me?//
     $(".button").click(blurbToggle) ;
 
-    function blurbToggle () {
-        event.preventDefault();
+    function blurbToggle() {
+        // event.preventDefault();
         $("#show-this-on-click").slideToggle();
     }
  
