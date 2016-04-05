@@ -372,13 +372,13 @@
 					}*/
 
 nav {
-    opacity: .7;
+    
     width: 100%;
     background: #455868;
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    position: relative;
+    
     border-bottom: 2px solid #283744;
 }
 
@@ -503,7 +503,7 @@ nav a#pull {
 		#banner h2 {
 			color: #fff;
 			display: inline-block;
-			font-size: 3.5em;
+			font-size: 1.5em;
 			line-height: 0.25;
 			margin-bottom: 0.5em;
 		}
@@ -518,6 +518,22 @@ nav a#pull {
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
+
+.blurb {
+	background: #000000;
+	opacity: .8;
+    color: white;
+    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1% 0;
+    display: none;
+}
+
+
+
+.blurb > p:first-of-type{
+	margin-bottom:0;
+}
 
 
 /*About*/
@@ -574,11 +590,12 @@ nav a#pull {
 }
 
 .projects h3 {
+	display: inline-block;
 	color: #fff;
 }
 
 .projectcontent {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     max-width: 1200px;
     overflow: hidden;
@@ -596,6 +613,12 @@ nav a#pull {
     width: 33.3%;
     border-radius: 2px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.094), 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.2), 0 2px 1.5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+	width: 50%;
+	display: inline-block;
+	margin-left: -4.5px;
 }
 
 
@@ -688,7 +711,37 @@ nav a#pull {
     min-height: 100%;
 }
 
+/*Scroll To Top Button*/
 
+.scrollToTop {
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    top: 90%;
+    right: 3%;
+    display: none;
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+.fa {
+    font-size: 50px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-arrow-circle-up:before {
+    content: "\f0aa";
+}
 /*Mobile Goes Here*/
 
 
@@ -732,6 +785,13 @@ nav a#pull {
         text-indent: 25px;
     }
 
+    #banner {
+    	width: 100%;
+    }
+
+    #header.alt .button {
+    	width: 100%;
+    }
 
 
 }
@@ -773,6 +833,14 @@ nav a#pull {
         right: 15px;
         top: 10px;
     }
+
+    #banner {
+    	width: 100%;
+    }
+
+    #header.alt .button {
+    	width: 100%;
+    }
 }
 
 @media only screen and (max-width : 320px) {
@@ -801,5 +869,13 @@ nav a#pull {
     }
     nav li a {
         border-bottom: 1px solid #576979;
+    }
+
+    #banner {
+    	width: 100%;
+    }
+
+    #header.alt .button {
+    	width: 100%;
     }
 }
