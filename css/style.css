@@ -373,16 +373,18 @@
 					}*/
 
 nav {
-    
     width: 100%;
     background: #455868;
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-   
     border-bottom: 2px solid #283744;
 }
 
+.fixed {
+	position: fixed;
+	top: 0;
+}
 nav ul {
     padding: 0;
     margin: 0 auto;
@@ -512,7 +514,7 @@ nav a#pull {
 		#banner ul {
 			list-style: none;
 		}
-		
+
 		#banner p {
 			color: #fff;
 			font-size: 1.5em;
@@ -525,8 +527,11 @@ nav a#pull {
 	}
 
 .blurb {
-	background: #000000;
-	opacity: .8;
+	background-image: url("images/overlay.png"), url("../images/pic01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
     color: white;
     font-family: "Avenir Next", Arial, Helvetica, sans-serif;
     text-align: center;
@@ -534,7 +539,9 @@ nav a#pull {
     display: none;
 }
 
-
+.blurb h2 {
+	color: #fff;
+}
 
 .blurb > p:first-of-type{
 	margin-bottom:0;
@@ -544,7 +551,7 @@ nav a#pull {
 /*About*/
 
 #about {
-	background-image: url("images/overlay.png"), url("../images/pic01.jpg");
+	background-image: url("images/overlay.png"), url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -567,7 +574,7 @@ nav a#pull {
 /*Projects Section */
 
 .projects {
-	background-image: url("images/overlay.png"), url("../images/pic03.jpg");
+	background-image: url("images/overlay.png"), url("../images/vietnam.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -599,7 +606,7 @@ nav a#pull {
 	color: #fff;
 }
 
-.portfolioopcontent {
+.projectcontent {
     display: block;
     margin: 0 auto;
     max-width: 1200px;
@@ -608,7 +615,7 @@ nav a#pull {
     padding-bottom: 30px;
 }
 
-.portfolioopcontent .contentboxo {
+.projectcontent .contentboxo {
     float: left;
     margin: 1%;
     overflow: hidden;
@@ -620,7 +627,7 @@ nav a#pull {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.094), 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.2), 0 2px 1.5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.portfolioopcontent .contentboxo img.overlayo {
+.projectcontent .contentboxo img.overlayo {
     display: block;
     margin: 0 auto;
     position: relative;
@@ -632,43 +639,14 @@ nav a#pull {
 
 
 
-
-.projectcontent {
-    display: inline-block;
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 30px;
-}
-
-.projectcontent .projectbox {
-	display: inline-block;
-    margin: 1%;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    transition: all 0.6s ease 0s;
-    width: 33.3%;
-    border-radius: 2px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.094), 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.2), 0 2px 1.5px 0 rgba(0, 0, 0, 0.1);
-}
-
-.project-container {
+/*.project-container {
 	width: 50%;
 	display: inline-block;
 	margin-left: -11.5px;
 }
+*/
 
 
-.projectcontent .projectbox img.overlayo {
-    
-    margin: 0 auto;
-    position: relative;
-    transition: opacity 0.3s ease 0s;
-    width: 100%;
-    z-index: 500;
-}
 
 /* Footer */
 	#footer {
@@ -676,7 +654,7 @@ nav a#pull {
 		padding: 8em 0 6em 0;
 		color: #aaa;
 		text-align: center;
-		background-image: url("images/overlay.png"), url("../images/vietnam.jpg");
+		background-image: url("images/overlay.png"), url("../images/pic03.jpg");
 		background-attachment: fixed;
 		background-position: center top;
 		background-size: cover;
