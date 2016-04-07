@@ -22,6 +22,9 @@ $(window).resize(function(){
     }
 }); 
 
+
+  
+
 // <!----- JQUERY FOR SLIDING NAVIGATION --->   
 
   $('a[href*=#]').each(function() {
@@ -52,7 +55,7 @@ $(window).resize(function(){
     function blurbToggle() {
         // event.preventDefault();
         $("#show-this-on-click").slideToggle();
-      
+
     }
  
 //Check to see if the window is top if not then display button
