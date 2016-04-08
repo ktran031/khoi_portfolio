@@ -301,17 +301,19 @@ nav a#pull {
 						border-bottom: 1px solid #000;
 					}
 
+
+
+
+	
+
 /* Banner */
 
-	#banner {
-		padding: 16em 0 13em 0;
-		background-attachment: fixed;
+		#banner {
+		padding: 22em 0 28em 0;
 		/*background-image: url("images/overlay.png"), url("../images/pic04.jpg");*/
-		background-position: center top;
-		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
-	}
+		}
 
 		#banner :last-child {
 			margin-bottom: 0;
@@ -559,6 +561,8 @@ font-weight: 300;
 /*Video*/
 
 .fullscreen-bg {
+	min-width: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -626,6 +630,10 @@ font-weight: 300;
 		display: none;
 	}
 
+	#header .fa {
+    font-size: 30px;
+
+	}
 	.container {
 		width: 100%;
 	}
