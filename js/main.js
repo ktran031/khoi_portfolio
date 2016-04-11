@@ -54,7 +54,7 @@ $(window).resize(function(){
 
     function blurbToggle() {
         // event.preventDefault();
-        $(".blurb").slideToggle();
+        $("#show-this-on-click").slideToggle();
 
     }
  

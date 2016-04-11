@@ -141,6 +141,8 @@
   font-size: 24px;
 }
 
+a.button {cursor: pointer;}
+
 	
 
 /* Header */
@@ -328,6 +330,7 @@ nav a#pull {
 		}
 
 		#banner ul {
+			display: block;
 			list-style: none;
 		}
 
@@ -335,7 +338,8 @@ nav a#pull {
 			color: #fff;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
-			text-transform: uppercase;
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 
 	body.is-touch #banner {
@@ -365,6 +369,7 @@ nav a#pull {
 }
 
 
+
 /*About*/
 
 #about {
@@ -386,6 +391,11 @@ nav a#pull {
 #about img {
 	border-radius: 50%;
 
+}
+
+#about p {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /*Projects Section */
@@ -412,6 +422,11 @@ nav a#pull {
     font-size: 2em;
     letter-spacing: 2px;
     color: white;
+}
+
+.projects p {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #project-hr {
