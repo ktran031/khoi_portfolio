@@ -26,7 +26,6 @@ $(window).resize(function(){
   
 
 // <!----- JQUERY FOR SLIDING NAVIGATION --->   
-
   $('a[href*=#]').each(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname
@@ -47,9 +46,8 @@ $(window).resize(function(){
     }
   });
 
-// Banner Area //
-    
-    //Click to slide down Why Work With Me?//
+// Banner Area // 
+//Click to slide down Why Work With Me?//
     $(".button").click(blurbToggle) ;
 
     function blurbToggle() {

@@ -433,6 +433,7 @@ nav a#pull {
 }
 
 .projectcontent .contentboxo {
+	height: 300px;
     display: inline-block;
     margin: 1%;
     overflow: hidden;
@@ -454,7 +455,7 @@ nav a#pull {
 }
 
 .projectcontent .contentboxo .info {
-   background-color: rgba(32, 30, 25, 0.6);
+background-color: rgba(32, 30, 25, 0.6);
 color: #fff;
 display: block;
 font-size: 1.4em;
@@ -470,7 +471,7 @@ top: 0;
 transition: all 0.3s ease 0s;
 width: 100%;
 z-index: 400;
-margin-top: 70px;
+margin-bottom: 35px;
 }
 
 .projectcontent .contentboxo:hover img.overlayo {
@@ -715,7 +716,7 @@ font-weight: 300;
     }
     nav a#pull:after {
         content:"";
-        background: url('nav-icon.png') no-repeat;
+        /*background: url('nav-icon.png') no-repeat;*/
         width: 30px;
         height: 30px;
         display: inline-block;
