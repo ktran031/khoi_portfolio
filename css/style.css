@@ -37,10 +37,12 @@
 	
 
 	p {
+		cursor: auto;
 		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		cursor: auto;
 		color: #484848;
 		font-weight: 700;
 		line-height: 1em;
@@ -58,19 +60,9 @@
 		line-height: 1.5em;
 	}
 
-	
-/* Main */
-
-	#main {
-		padding-top: 4em;
+	ul, li {
+		cursor: auto;
 	}
-
-
-	
-
-
-
-
 
 /* Icon */
 
@@ -136,12 +128,18 @@
 
 .blue {
   text-decoration: none;
-  background: #033048;
+  background: #455868;
   color: #fff;
   font-size: 24px;
 }
 
 a.button {cursor: pointer;}
+
+a.button:hover, a.button:active {
+	color: #000;
+	border-bottom: 1px solid #000;
+    background-color: #8c99a4;
+}
 
 	
 
@@ -289,11 +287,6 @@ nav a#pull {
 					color: #fff;
 				}
 
-			#header.alt nav {
-				/*right: 2em;
-				top: 2em;*/
-			}
-
 				#header.alt nav a {
 					color: #fff;
 				}
@@ -303,10 +296,6 @@ nav a#pull {
 						border-bottom: 1px solid #000;
 					}
 
-
-
-
-	
 
 /* Banner */
 
@@ -347,12 +336,7 @@ nav a#pull {
 	}
 
 .blurb {
-	background-image: url("images/overlay.png"), url("../images/moon.jpg");
-    background-repeat: no-repeat;
-    background: linear-gradient;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
+	background-color: #455868;
     color: white;
     font-family: "Avenir Next", Arial, Helvetica, sans-serif;
     text-align: center;
@@ -685,6 +669,10 @@ font-weight: 300;
     	width: 100%;
     }
 
+    .button {
+     margin-right: 0 auto;
+    }
+
     .projectcontent .contentboxo {
     	float: none;
     	margin: 50px;
@@ -695,12 +683,9 @@ font-weight: 300;
 		width: 100%;
 	}
 
-	#footer h3 {
+	#footer ul {
 		width: 100%;
 	}
-
-
-
 
 }
 
@@ -747,6 +732,10 @@ font-weight: 300;
     	width: 100%;
     }
 
+    .button {
+     margin-right: 0 auto;
+    }
+
     #header .fa {
     font-size: 25px;
     margin-right: -7px;
@@ -756,8 +745,12 @@ font-weight: 300;
 		width: 100%;
 	}
 
-	#footer h3 {
-		width: 100%;
+	#footer .copyright li {
+	border-left: none;
+	float: none;
+	list-style: none;
+	margin-left: 0em;
+	padding-left: 0em;
 	}
 }
 
@@ -797,11 +790,19 @@ font-weight: 300;
     	width: 100%;
     }
 
+    .button {
+     margin-right: 0 auto;
+    }
+    
 	#footer {
 		width: 100%;
 	}
 
-	#footer h3 {
-		width: 100%;
+	#footer .copyright li {
+	border-left: none;
+	float: none;
+	list-style: none;
+	margin-left: 0em;
+	padding-left: 0em;
 	}
 }
