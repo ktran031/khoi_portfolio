@@ -452,6 +452,7 @@ nav a#pull {
     transition: opacity 0.3s ease 0s;
     width: 100%;
     z-index: 500;
+    height: 20em;
 }
 
 .projectcontent .contentboxo .info {
