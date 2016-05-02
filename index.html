@@ -7,8 +7,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style.css" >
       <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
@@ -16,9 +17,35 @@
     <!-- Header -->
       <header id="header" class="alt">
         
+   <div class="navbar navbar-inverse navbar-static-top">
+   	<div class="container">
+
+   		<a href="#" class = "navbar-brand">K|T</a>
+
+   		<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+   			<span class = "icon-bar"></span>
+   			<span class = "icon-bar"></span>
+   			<span class = "icon-bar"></span>
+   		</button>
+
+   		<div class = "collapse navbar-collapse navHeaderCollapse">
+   			<ul class = "nav navbar-nav navbar-right">
+
+   				<li class = "active"><a href="#banner" class="active" title="Next Section">Home</a></li>
+        		<li><a href="#about" title="Next Section">About</a></li>
+    			<li><a href="#projects" title="Next Section">Portfolio</a></li>
+    			<li><a href="#footer">Contact</a></li>
+   				<li><a href="resume/resume.pdf" rel="0" target="nofollow">Resume</a></li>
+
+   			</ul>
+
+   		</div>
+   	</div>
+   </div>
 
 
-  <nav class="clearfix">
+
+  <!-- <nav class="clearfix">
   <h1 class="logo"><strong><a href="index.html">K | T</a></strong></h1>
     <ul class="clearfix">
 
@@ -29,7 +56,7 @@
     <li><a href="resume/resume.pdf" rel="0" target="nofollow">Resume</a></li>
     </ul>
     <a href="#" id="pull">Menu</a>
-  </nav>
+  </nav> -->
 
 <!-- Video -->
   <div class="fullscreen-bg">
@@ -180,6 +207,7 @@
     </footer>
     
   <script src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   </body>
 </html>

@@ -23,6 +23,43 @@ $(window).resize(function(){
 }); 
 
 
+// NavBar Changes Color on Scroll
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('.navbar-inverse');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-inverse").css({'background-color': '#000', 'padding': '10px'});
+//        } else {
+//           $('.navbar-inverse').css({'background-color': '#455868', 'padding': '0px'});
+//        }
+//    });
+//     }
+// });
+
+
+// // Navbar turns transparent on scroll
+// var opacity = 1;
+// var lastScrollTop = 0;
+// $(window).scroll(function(){
+//     var st = $(this).scrollTop();
+//     if(st == 0)
+//         $('.clearfix').css('opacity','1');
+
+//     if (opacity > 0.5 && (st > lastScrollTop)){
+//        $('.clearfix').css('opacity','-=0.01');
+//        opacity -= 0.01;
+//     }
+//     else if(opacity < 1)
+//     {
+//        $('.clearfix').css('opacity','+=0.01');
+//         opacity += 0.01;
+//     }
+//     lastScrollTop = st;
+// });
   
 
 // <!----- JQUERY FOR SLIDING NAVIGATION --->   
